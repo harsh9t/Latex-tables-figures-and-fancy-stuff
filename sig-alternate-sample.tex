@@ -30,11 +30,11 @@ Harsh Thakkar\\
        \email{hthakkar@uni-bonn.de}
 % 2nd. author
 \alignauthor
-Second Author\\
-       \affaddr{Enterprise Information Systems Lab}\\
-       \affaddr{University of Bonn}\\
-       \affaddr{Bonn, Germany}\\
-       \email{email@uni-bonn.de}
+Dharmen Punjani\\
+       \affaddr{Name of Lab}\\
+       \affaddr{National and Kapodistrian University of Athens}\\
+       \affaddr{Athens, Greece}\\
+       \email{dharmen.punjani@gmail.com}
 % nth. author
 \alignauthor N$^_{th}$ Author\\
        \affaddr{Name of Lab or Group}\\
@@ -127,7 +127,12 @@ The abstract goes here \dots
 \subsubsection{QALD 6 queries}
 \subsubsection{Northwind queries}
 \subsection{Evaluation}
-We use QALD 6 and the Northwind queryset in order to evaluate the performance of our approach.
+We use QALD 6 and the Northwind querysets for validating the performance of our approach.
+\subsubsection{Performance metrics}
+\begin{enumerate}
+    \item \textbf{Conversion accuracy (Precision$_{conv}$):} It is the ratio of the total number of SPARQL QUERIES converted correctly to the total number of SPARQL queries in the input dataset.
+    \item \textbf{Result accuracy (Precision$_{res}$):} It is the ratio of the total number of correct results returned by the converted/equivalent Gremlin query to the number of correct results returned by the original SPARQL query.
+\end{enumerate}
 
 \section{Related work}
 
