@@ -1,6 +1,5 @@
 \documentclass{sig-alternate-05-2015}
 
-
 \begin{document}
 
 % Copyright
@@ -12,10 +11,8 @@
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
 
-
-
-\title{Title goes here}
-
+\title{Towards an Automatic Conversion of SPARQL queries to Gremlin Traversals}
+%\title{Needs a better, witty title}
 
 
 \numberofauthors{3} %  in this sample file, there are a *total*
@@ -27,28 +24,28 @@
 % 1st. author
 \alignauthor
 Harsh Thakkar\\
-       \affaddr{Enterprise Information Sysytems Lab}\\
+       \affaddr{Enterprise Information Systems Lab}\\
        \affaddr{University of Bonn}\\
        \affaddr{Bonn, Germany}\\
        \email{hthakkar@uni-bonn.de}
 % 2nd. author
 \alignauthor
 Second Author\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{P.O. Box 1212}\\
-       \affaddr{Dublin, Ohio 43017-6221}\\
-       \email{webmaster@marysville-ohio.com}
+       \affaddr{Enterprise Information Systems Lab}\\
+       \affaddr{University of Bonn}\\
+       \affaddr{Bonn, Germany}\\
+       \email{email@uni-bonn.de}
 % nth. author
-\alignauthor Nth Author\\
-       \affaddr{Palmer Research Laboratories}\\
-       \affaddr{8600 Datapoint Drive}\\
-       \affaddr{San Antonio, Texas 78229}\\
-       \email{cpalmer@prl.com}
+\alignauthor N$^_{th}$ Author\\
+       \affaddr{Name of Lab or Group}\\
+       \affaddr{Name of University}\\
+       \affaddr{City, Country}\\
+       \email{name@email.com}
 }
 
-\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
-email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
-(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
+%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
+%email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
+%(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
 
 %\date{30 July 1999}
 
@@ -83,11 +80,58 @@ The abstract goes here \dots
 
 \keywords{ACM proceedings; \LaTeX; text tagging}
 
+%--------------INTRODUCTION----------------
 \section{Introduction}
+\subsection{Motivation}
+\subsection{Research Questions}
 
-\section{The {\secit Body} of The Paper}
+%--------------QUERY LANGUAGE ANALYSIS----------------
+\section{Query Language Hueristics}
+\subsection{SPARQL}
+\subsubsection{Underlying model and complexity}
+\subsection{Gremlin}
+\subsubsection{Underlying model and complexity}
+
+\section{SPARQL-Gremlin Mapper}
 
 
+%--------------DATA DESCRIPTION----------------
+\section{Data}
+\subsection{DBpedia dataset}
+\subsubsection{Data models}
+\begin{enumerate}
+    \item RDF data model
+    \item Graph data model
+\end{enumerate}
+
+\subsection{Northwind dataset}
+\subsubsection{Data models}
+\begin{enumerate}
+    \item RDF data model
+    \item Graph data model
+\end{enumerate}
+
+
+%--------------TOOLS----------------
+\section{Tools}
+%----------CAN BE MERGED/MOVED INTO A NEW SECTION: EXPERIMANTAL SETUP ------------
+\subsection{Openlink Virtuoso}
+\subsection{Neo4J}
+
+
+
+%-------------EXPERIMENTS---------------
+\section{Experiments}
+\subsection{Setup}
+\subsection{Queries}
+\subsubsection{QALD 6 queries}
+\subsubsection{Northwind queries}
+\subsection{Evaluation}
+We use QALD 6 and the Northwind queryset in order to evaluate the performance of our approach.
+
+\section{Related work}
+
+\section{Conclusion}
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
@@ -101,11 +145,5 @@ The abstract goes here \dots
 %Appendix A
 
 \section{Headings in Appendices}
-
-%\subsection{Additional Authors}
-%This section is inserted by \LaTeX; you do not insert it.
-%You just add the names and information in the
-%\texttt{{\char'134}additionalauthors} command at the start
-%of the document.
 
 \end{document}
