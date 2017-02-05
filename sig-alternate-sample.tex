@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{rotating}
 \usepackage{pdflscape}
+\usepackage[table,xcdraw]{xcolor}
 \begin{document}
 
 % Copyright
@@ -254,6 +255,53 @@ Project Gutenberg License  & Restricts Commercial Use    & \multicolumn{1}{c|}{-
 \caption{Overall ranking of datasets for the contextual category.}
 \label{tbl:tb5ContextualOverall}
 \end{table*}
+
+
+\textbf{Skewed table with cell color.} Refer to table~\ref{tbl:rotatedComponents}.
+
+\begin{table*}[]
+\centering
+\resizebox{0.7\textwidth}{!}{%
+\begin{tabular}{l|lllllllllll}
+\cline{2-12}
+                                                  & \multicolumn{11}{c|}{Components}                                                                                                                                                                                                                                                   \\ \cline{2-12} 
+                                                  & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{4} & \multicolumn{1}{l|}{5} & \multicolumn{1}{l|}{6} & \multicolumn{1}{l|}{7} & \multicolumn{1}{l|}{8} & \multicolumn{1}{l|}{9} & \multicolumn{1}{l|}{10} & \multicolumn{1}{l|}{11} \\ \hline
+\multicolumn{1}{|l|}{IO1}                         & 0.85                   &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{IN3}                         & 0.76                   &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{V1}                          & 0.72                   &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{V2}                          & 0.69                   &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\rowcolor[HTML]{FE996B} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FE996B}CS9} &                        &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{P2}                          &                        & 0.86                   &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{P1}                          &                        & 0.78                   &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{L1}                          &                        & 0.74                   &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{U1}                          &                        & 0.58                   &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\rowcolor[HTML]{FE996B} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FE996B}I1}  &                        &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{PE3}                         &                        &                        & 0.92                   &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{PE2}                         &                        &                        & 0.91                   &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\rowcolor[HTML]{FE996B} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FE996B}A3}  &                        &                        &                        &                        &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS4}                         &                        &                        &                        & 0.83                   &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS6}                         &                        &                        &                        & 0.63                   &                        &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{U3}                          &                        &                        &                        &                        & 0.93                   &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{U5}                          &                        &                        &                        &                        & 0.89                   &                        &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{RC2}                         &                        &                        &                        &                        &                        & 0.85                   &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{IN4}                         &                        &                        &                        &                        &                        & 0.81                   &                        &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{L2}                          &                        &                        &                        &                        &                        &                        & 0.8                    &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS1}                         &                        &                        &                        &                        &                        &                        & -0.75                  &                        &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{RC1}                         &                        &                        &                        &                        &                        &                        &                        & 0.68                   &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS2}                         &                        &                        &                        &                        &                        &                        &                        & 0.61                   &                        &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CN2}                         &                        &                        &                        &                        &                        &                        &                        &                        & 0.77                   &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS3}                         &                        &                        &                        &                        &                        &                        &                        &                        & 0.68                   &                         &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{SV3}                         &                        &                        &                        &                        &                        &                        &                        &                        &                        & 0.79                    &                         \\ \cline{1-1}
+\multicolumn{1}{|l|}{CS5}                         &                        &                        &                        &                        &                        &                        &                        &                        &                        &                         & 0.84                    \\ \cline{1-1}
+\end{tabular}%
+}
+\caption{Rotated component matrix.}
+\label{tbl:rotatedComponents}
+\end{table*}
+
 %===================================================
 %----------------all fancies here-------------
 %===================================================
