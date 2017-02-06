@@ -5,6 +5,14 @@
 \usepackage{rotating}
 \usepackage{pdflscape}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{hyperref}
+
 \begin{document}
 
 % Copyright
@@ -322,6 +330,31 @@ Equation wih gather command, What is this?:
 \overline{\mathit{pr_{exs}}} := \{y~|~y \in \overline{v_p} \wedge y \in \mathit{prop}(D)\}
 \end{gather*}
 
+
+\textbf{Algorithm.} Example of algorithm environment use with the \textit{autoref} command for referencing labels: 
+Algorithm~\autoref{tab:algorithm} shows the sketch of our clustering approach. The use of the pacakge \texttt{hyperref} is required in order for autoref to work.
+
+\begin{algorithm}[tb]
+  	\caption{Sketch of Semantic Clustering Algorithm} 
+  	\label{tab:algorithm}
+  	\small
+  	\begin{algorithmic}[1]
+  		\Require permissions, prohibitions, duties with features
+  		\For {the three classes }
+  		\For {all pairs in each class}
+  		\State $A \gets \text{similarity of actions}$ \Comment{}
+  		\State $B \gets \text{similarity of conditions}$ \Comment{}
+  		\State $C \gets \text{similarity of policy types}$ \Comment{}
+  		\State $D \gets \text{similarity of remainders of segments}$ \Comment{}
+ 		\State $finalSim \gets \alpha A +  \beta B + \gamma C + \delta D$ \Comment{}
+  		\State add finalSim to the corresponding matrix cell \Comment{}
+  		\EndFor
+  		\State do HAC clustering for the matrix with a threshold
+  		\EndFor
+  	\end{algorithmic}
+  \end{algorithm}
+  
+  
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
 I would like to thank the people (\textit{including myself, because why not?}) from who I collected all these templates. They source from a wide variety of texts including all published, submitted, un-published works of friends and affiliations. 
